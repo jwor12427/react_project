@@ -8,7 +8,7 @@ import { UrlContext } from "../context/UrlContext";
 
 function ArtistViewSlider({ data, id }) {
 	const [img, setImg] = useState(null);
-	const [etc, setEtc] = useState(null);
+	const [setEtc] = useState(null);
 	const { setUrl, setText } = useContext(UrlContext);
 
 	const SwitchPlayer = (e) => {

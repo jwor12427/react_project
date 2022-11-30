@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import Loader from "./Loader";
-import themaSearch from "../utils/themaSearch.json";
+//import themaSearch from "../utils/themaSearch.json";
 
 function RecomThema({ id }) {
 	const [data, setData] = useState(null);

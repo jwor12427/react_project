@@ -5,8 +5,8 @@ import { useEffect, useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import ReactPlayer from "react-player";
 import { getDownUrl } from "./TagBox";
-import Loader from "./Loader";
-import themaSearchDetailSong from "../utils/themaSearchDetailSong.json";
+//import Loader from "./Loader";
+//import themaSearchDetailSong from "../utils/themaSearchDetailSong.json";
 
 function getTimeStringSeconds(seconds) {
 	let hour = 0,

@@ -4,7 +4,7 @@ import React, { useEffect, useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import ReactPlayer from "react-player";
 import { getDownUrl } from "./TagBox";
-import Loader from "./Loader";
+//import Loader from "./Loader";
 
 function getTimeStringSeconds(seconds) {
 	let hour, min, sec;
@@ -13,11 +13,11 @@ function getTimeStringSeconds(seconds) {
 	min = parseInt((seconds % 3600) / 60);
 	sec = seconds % 60;
 
-	if (hour.toString().length == 1) hour = "0" + hour;
-	if (min.toString().length == 1) min = "0" + min;
-	if (sec.toString().length == 1) sec = "0" + sec;
+	if (hour.toString().length === 1) hour = "0" + hour;
+	if (min.toString().length === 1) min = "0" + min;
+	if (sec.toString().length === 1) sec = "0" + sec;
 
-	if (hour == 0) {
+	if (hour === 0) {
 		return min + ":" + sec;
 	} else {
 		return hour + ":" + min + ":" + sec;

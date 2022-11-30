@@ -1,13 +1,13 @@
 /** @format */
 
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import TagBox from "./TagBox";
-import fetchAPI from "../utils/fetchAPI";
+//import fetchAPI from "../utils/fetchAPI";
 import chart from "../utils/chart50.json";
 import Loader from "./Loader";
 
 const MainBottom = () => {
-	const [videos, setVideos] = useState(chart.items.slice(0, 5));
+	const [videos] = useState(chart.items.slice(0, 5));
 
 	// useEffect(() => {
 	//   const fetchResults = async () => {
@@ -25,6 +25,7 @@ const MainBottom = () => {
 			.forEach((x) => x.classList.add("show"));
 		e.target.style.display = "none";
 	};
+	console.log(onClickMore);
 
 	if (videos?.length === 0 || !videos) return <Loader />;
 
