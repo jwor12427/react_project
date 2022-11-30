@@ -6,7 +6,7 @@ import { useParams } from "react-router-dom";
 import axios from "axios";
 import { Loader, ViewSlider } from "../components";
 import { UrlContext } from "../context/UrlContext";
-import artistDetail from "../utils/artistDetail.json";
+import { artistDetail } from "../utils/artistDetail.json";
 
 const ArtistView = () => {
 	const { name } = useParams();
