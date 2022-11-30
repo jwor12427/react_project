@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import { Loader } from ".";
-import themaSearchConts from "../utils/themaSearchConts.json";
+//import themaSearchConts from "../utils/themaSearchConts.json";
 
 const ThemaSearchConts = ({ list }) => {
 	const [data, setData] = useState(null);

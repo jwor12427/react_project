@@ -15,9 +15,10 @@ function randomValueFromArray(array) {
 		const random = Math.floor(Math.random() * array.length);
 		newArray.push(array.splice(random, 1)[0]);
 	}
+
 	return newArray;
 }
-
+console.log(randomValueFromArray);
 const ViewSlider = ({ songs, id }) => {
 	if (!songs) return <Loader />;
 
